@@ -1,0 +1,54 @@
+Incremental model checking of delta-oriented software product lines
+Parametric DeltaJ 1.5: Propagating Feature Attributes into Implementation Artifacts
+On type checking Delta-Oriented product lines
+Refactoring Delta-Oriented Product Lines to achieve Monotonicity
+Delta-Oriented FSM-Based Testing
+Delta-oriented test case prioritization for integration testing ofsoftware product lines
+Towards incremental model slicing for delta-oriented software product lines
+Delta-oriented model-based integration testing of large-scale systems
+Deployment Variability in Delta-Oriented Models
+DeltaJ 1.5: delta-oriented programming for Java 1.5
+Delta-oriented multi software product lines
+Refactoring delta-oriented software product lines
+A Delta Oriented Approach to the Evolution and Reconciliation of Enterprise Software Products Lines
+Refinement-based testing of delta-oriented product lines
+A formal foundation for dynamic delta-oriented software product lines
+A Liskov Principle for Delta-Oriented Programming
+Delta-Oriented Monitor Specification
+Conflict Detection in Delta-Oriented Programming
+Family-Based Analysis of Type Safety for Delta-Oriented Software Product Lines
+Evolving Delta-Oriented Software Product Line Architectures
+A transformational proof system for delta-oriented programming
+Incremental Model-Based Testing of Delta-Oriented Software Product Lines
+Compositional type-checking for delta-oriented programming
+Delta-oriented architectural variability using MontiCore
+Dynamic delta-oriented programming
+Verification of Software Product Lines with Delta-Oriented Slicing
+Pure delta-oriented programming
+Delta-Oriented Programming of Software Product Lines
+SiPL - A Delta-Based Modeling Framework for Software Product Line Engineering
+Delta modeling for software architectures
+Engineering delta modeling languages
+Handling database schema variability in software product lines
+Variability modelling in the ABS language
+A novel model-based testing approach for software product lines
+A UML profile for delta-oriented programming to support software product line engineering
+Fine-grained test case prioritization for integration testing of delta-oriented software product lines
+Implementing delta-oriented SPLs using PEoPL: An example scenario and case study
+Incremental consistency checking in delta-oriented UML-models for automation systems
+Incremental variability management in conceptual data models of software product lines
+Refactoring delta-oriented product lines to enforce guidelines for efficient type-checking
+Delta-trait programming of software product lines
+DeltaCCS: A core calculus for behavioral change
+Compositional type checking of delta-oriented software product lines
+Delta modeling and model checking of product families
+Requirements-based delta-oriented SPL testing
+Delta-oriented model-based SPL regression testing
+Row types for delta-oriented programming
+A tool environment for quality assurance of delta-oriented model-based SPLs
+A unified and formal programming model for deltas and traits
+An extension of the ABS toolchain with a mechanism for type checking SPLs
+Delta-Oriented Product Prioritization for Similarity-Based Product-Line Testing
+Evaluating Delta-Oriented Programming for Evolving Software Product Lines
+Towards a development process for maturing delta-oriented software product lines
+Unanticipated evolution in software product lines versus independent products: A case study

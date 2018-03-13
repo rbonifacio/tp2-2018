@@ -1,0 +1,12 @@
+package kwic
+
+import org.scalatest._
+
+class DataStorageManagerTest extends FlatSpec with Matchers {
+
+  behavior of "a DataStorage"
+
+  it should "have zero size if the file is empty" in {
+    0 should be (0) 
+  }
+}
