@@ -9,13 +9,13 @@ object MainProgram extends CliMain[Unit] (
   name="KWIC",
   description="a simple keyword in context implementation") {
 
-  var inputFile  = arg[String](description = "input file with a list of paper titles")
   var outputFile = opt[Option[String]](description = "output file of the index")  
   var stopWord   = opt[Option[File]](description = "file with a list of stop words")
- 
 
   def run: Unit = {
-    val dsm = new DataStorageManager(inputFile)
+    val dsm = createStorage()
+    dsm.init()
+
     val im  = new IndexManager()
 
     // read the file and build de index
@@ -34,4 +34,8 @@ object MainProgram extends CliMain[Unit] (
       })
     }
   }
+
+  // Factory Method for storages (until we do not explor DI) 
+  def createStorage(): DataStorageManager = new DBLPStorageManager()
+
 }
