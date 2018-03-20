@@ -13,6 +13,10 @@ public class Lit implements Exp {
 		this.value = value; 
 	}
 	
+	public int eval() {
+		return value;
+	}
+	
 	public String print() {
 		return value.toString();
 	}

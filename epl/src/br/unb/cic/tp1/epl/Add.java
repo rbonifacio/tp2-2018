@@ -14,6 +14,9 @@ public class Add implements Exp {
 		this.rhs = rhs;
 	}
 	
+	public int eval() {
+		return lhs.eval() + rhs.eval();
+	}
 	public String print() {
 		StringBuilder sb = new StringBuilder();
 		sb.append("(");

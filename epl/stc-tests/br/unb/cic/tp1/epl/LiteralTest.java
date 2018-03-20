@@ -9,4 +9,10 @@ public class LiteralTest {
 		Lit lit100 = new Lit(100);	
 		assertEquals("100", lit100.print());
 	}
+	
+	@Test 
+	public void testEval() {
+		Lit lit100 = new Lit(100);
+		assertEquals(100, lit100.eval());
+	}
 }

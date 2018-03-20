@@ -11,4 +11,5 @@ package br.unb.cic.tp1.epl;
  */
 public interface Exp {
 	public String print();
+	public int eval();
 }

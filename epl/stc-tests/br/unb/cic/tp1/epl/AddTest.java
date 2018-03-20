@@ -12,5 +12,14 @@ public class AddTest {
 		assertEquals("(3 + 4)", s1.print());
 		assertEquals("((3 + 4) + 3)", s2.print());
 	}
+	
+	@Test
+	public void testEval() {
+		Add s1 = new Add(new Lit(3), new Lit(4));
+		Add s2 = new Add(s1, new Lit(3)); 
+		
+		assertEquals(7, s1.eval());
+		assertEquals(10, s2.eval());
+	}
 
 }
