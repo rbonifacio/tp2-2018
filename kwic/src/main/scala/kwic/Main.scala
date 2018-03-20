@@ -36,6 +36,6 @@ object MainProgram extends CliMain[Unit] (
   }
 
   // Factory Method for storages (until we do not explor DI) 
-  def createStorage(): DataStorageManager = new DBLPStorageManager()
+  def createStorage(): DataStorageManager = new FileBasedStorageManager()
 
 }
