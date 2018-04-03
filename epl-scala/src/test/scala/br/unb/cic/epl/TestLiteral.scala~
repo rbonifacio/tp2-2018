@@ -1,0 +1,22 @@
+package br.unb.cic.epl
+
+import org.scalatest.FlatSpec
+import org.scalatest.Matchers
+import org.scalatest.GivenWhenThen
+import org.scalatest.BeforeAndAfter
+
+class TestLiteral extends FlatSpec with Matchers with GivenWhenThen with BeforeAndAfter {
+
+  behavior of "A Literal"
+
+  var literal100: br.unb.cic.epl.Literal = _ 
+
+  before {
+    list = new Literal(100)
+  }
+
+  it should "return string 100 when we call literal100.print()" in {
+    literal100.print() should be ("100")
+  }
+
+}
