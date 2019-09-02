@@ -3,7 +3,7 @@ package kwic
 import scala.io.Source 
 import org.scalatest._
 
-class WordShiftTest extends FlatSpec with Matchers with GivenWhenThen {
+class DefaultWordShiftTest extends FlatSpec with Matchers with GivenWhenThen {
 
   behavior of "a word shift of Design Patterns: Elements of Reusable OO Softwre"
 
@@ -13,7 +13,7 @@ class WordShiftTest extends FlatSpec with Matchers with GivenWhenThen {
 
     title should be (List("Design", "Patterns", "Elements", "of", "Reusable", "OO", "Software"))
 
-    WordShift.shift(title, 6, 20) should be (r1)
+    DefaultWordShift.shift(title, 6, 20) should be (r1)
   }
 
   it should "return \"OO Software Design...\" when we shift the Pattern  word to the 30th position" in {
@@ -22,12 +22,12 @@ class WordShiftTest extends FlatSpec with Matchers with GivenWhenThen {
 
     title should be (List("Design", "Patterns", "Elements", "of", "Reusable", "OO", "Software"))
 
-    WordShift.shift(title, 1, 30) should be (r1)
+    DefaultWordShift.shift(title, 1, 30) should be (r1)
   }
 
   it should "fill a string with spaces " in {
     val l = List("abc", "defg", "hijk")
-    val r = WordShift.shift(l, 1, 2)
+    val r = DefaultWordShift.shift(l, 1, 2)
     r should be (List("defg", "hijk", "abc")) 
   }
 }

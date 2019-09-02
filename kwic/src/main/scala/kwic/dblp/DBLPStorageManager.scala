@@ -1,6 +1,9 @@
-package kwic
+package kwic.dblp
 
+import kwic.drs.DataStorageManager
 import play.api.libs.json._
+import java.net.URLEncoder
+
 
 /**
   *  An implementation of a storage manager based on 
@@ -14,8 +17,8 @@ class DBLPStorageManager() extends DataStorageManager {
 
   def init() : Unit = {
     print("Enter the DBLP search criteria (such as the author name) ")
-    val query = scala.io.StdIn.readLine() 
-    val url   = "http://dblp.org/search/publ/api?q="+query+"&format=json"
+    val query = scala.io.StdIn.readLine()
+    val url   = "https://dblp.org/search/publ/api?q="+URLEncoder.encode(query, "UTF-8")+"&format=json"
     lines     = makeRequest(url) 
   }
   

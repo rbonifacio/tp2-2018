@@ -1,11 +1,13 @@
-package kwic
+package kwic.base
+
+import kwic.drs.StopWordManager
 
 import scala.io.Source
 
 /**
  * A class that deals with stop words. 
  */   
-class StopWordManager(fileName : String = null) {
+class DefaultStopWordManager(fileName : String = null) extends StopWordManager {
 
   val words : List[String] = if(fileName == null) { 
     Source.fromResource("stop_words.txt").getLines.toList

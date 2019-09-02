@@ -1,10 +1,12 @@
-package kwic
+package kwic.base
+
+import kwic.drs.DataStorageManager
 
 import scala.io.Source
 /**
   * Models the content of a file.  
   */ 
-class FileBasedStorageManager() extends DataStorageManager {
+class DefaultStorageManager() extends DataStorageManager {
   private var lines: List[String] = _
 
   def init() : Unit = {

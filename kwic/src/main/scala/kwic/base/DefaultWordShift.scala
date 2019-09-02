@@ -1,11 +1,12 @@
-package kwic
+package kwic.base
 
+import kwic.drs.WordShift
 /**
   * A helper object to move strings around, until a 
   * desired position. Its implementation is tight to 
   * the KWIC problem.  
   */
-object WordShift {
+class DefaultWordShift() extends WordShift {
 
   /** Rotate the words in a list of Strings
     * 
@@ -14,12 +15,13 @@ object WordShift {
     * position in a string that corresponds to joining 
     * all string in the resulting list. .    
     */
-  def shift(words: List[String], pos: Int, target: Int) : List[String] = {
-    val (l, r) = words.splitAt(pos)
+  def shift(words: String, pos: Int, target: Int) : String = {
+    val wordList = words.split(" ").toList
+    val (l, r) = wordList.splitAt(pos)
     if(l.mkString(" ").length < (target -5)) {
-      return shiftRight(l, r, target)
+      return shiftRight(l, r, target).mkString(" ")
     }
-    return shiftLeft(l, r, target)
+    return shiftLeft(l, r, target).mkString(" ")
   }
 
   /*

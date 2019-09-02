@@ -1,9 +1,10 @@
-package kwic
+package kwic.base
 
-import scala.collection.mutable.HashMap
-import scala.collection.mutable.MutableList
+import kwic.drs.IndexManager
 
-class IndexManager() {
+import scala.collection.mutable.{HashMap, MutableList}
+
+class DefaultIndexManager() extends IndexManager {
 
   //a hash map from a word to the list of lines it appears. 
   private val map : HashMap[String, MutableList[(String, Int)]] = HashMap()

@@ -1,6 +1,8 @@
 package kwic
 
-import scala.io.Source 
+import kwic.base.DefaultIndexManager
+
+import scala.io.Source
 import org.scalatest._
 
 class IndexManagerTest extends FlatSpec with Matchers {
@@ -8,7 +10,7 @@ class IndexManagerTest extends FlatSpec with Matchers {
   behavior of "a non-empty index manager"
 
   it should "return false when we call the isEmpty method" in {
-    val manager = new IndexManager()
+    val manager = new DefaultIndexManager()
 
     manager.isEmpty should be (true)
 
@@ -19,7 +21,7 @@ class IndexManagerTest extends FlatSpec with Matchers {
   }
 
   it should "return a list of sorted words when we call sortedWords" in {
-    val manager = new IndexManager()
+    val manager = new DefaultIndexManager()
 
     manager.isEmpty should be (true)
 

@@ -1,6 +1,8 @@
 package kwic
 
-import scala.io.Source 
+import kwic.base.DefaultStopWordManager
+
+import scala.io.Source
 import org.scalatest._
 
 class StopWordManagerTest extends FlatSpec with Matchers {
@@ -8,7 +10,7 @@ class StopWordManagerTest extends FlatSpec with Matchers {
   behavior of "a stop word manager using the default dictionary"
 
   it should "return true when we call stopWord with stop words" in {
-    val manager = new StopWordManager()
+    val manager = new DefaultStopWordManager()
    
     manager.stopWord("the")     should be (true)
     manager.stopWord("a")       should be (true)
@@ -22,7 +24,7 @@ class StopWordManagerTest extends FlatSpec with Matchers {
   }
 
   it should "return false when we call stopWord without a stop word" in {
-    val manager = new StopWordManager()
+    val manager = new DefaultStopWordManager()
    
     manager.stopWord("scala") should be (false)
     manager.stopWord("rocks") should be (false)
